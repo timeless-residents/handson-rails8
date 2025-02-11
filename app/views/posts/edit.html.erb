@@ -1,0 +1,13 @@
+<div class="max-w-2xl mx-auto p-6">
+  <h1 class="text-3xl font-bold mb-6">Editing Post</h1>
+
+  <%= render 'form', post: @post %>
+
+  <div class="mt-4 space-x-4">
+    <%= link_to 'Show', @post, 
+        class: "text-blue-600 hover:text-blue-800" %>
+    <span class="text-gray-300">|</span>
+    <%= link_to 'Back', posts_path, 
+        class: "text-gray-600 hover:text-gray-800" %>
+  </div>
+</div>
